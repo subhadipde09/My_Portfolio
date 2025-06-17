@@ -5,7 +5,7 @@ function About() {
     <>
       <div name="About" className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-8 md:my-16'>
         <h1 className="text-xl md:text-2xl font-bold mb-5">About</h1>
-        <p className="text-justify ">Hello, I'm Shubhdip — an enthusiastic software developer with a passion for Java full stack.
+        <p className="text-justify ">Hello, I'm Shubhdip De — an enthusiastic software developer with a passion for Java full stack.
           I strive to create impactful and visually appealing software solutions that leave a lasting impression.</p>
         <br></br>
         <h1 className="text-green-500 font-bold text-xl">Education & Training</h1>
