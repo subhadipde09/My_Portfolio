@@ -28,7 +28,7 @@ function Home() {
 
 
 
-                        <div className="text-2xl sm:text-4xl md:text-4xl font-semibold flex flex-wrap items-center gap-x-2 mt-4">
+                        <div className="text-2xl sm:text-2xl md:text-4xl font-semibold flex flex-wrap items-center gap-x-2 mt-4">
                             <span>I'm a</span>
                             <ReactTyped
                                 className="text-red-700"
