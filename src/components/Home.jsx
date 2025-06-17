@@ -1,9 +1,5 @@
 import React from 'react';
 import { ReactTyped } from 'react-typed';
-// import { FaFacebookSquare } from "react-icons/fa";
-// import { FaSquareXTwitter } from "react-icons/fa6";
-// import { FaLinkedin } from "react-icons/fa";
-// import { FaSquareInstagram } from "react-icons/fa6";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa6";
@@ -53,20 +49,7 @@ function Home() {
                     md:space-y-0 ">
                             <div className="order-2 md:order-1">
                                 <h1 className="font-bold mb-2 mt-5 ml-3.5 md:ml-0">Upskilling on</h1>
-                                {/* <ul className="flex space-x-3">
-                                    <a href='https://www.facebook.com/subhadip.de.944' target="_blank">
-                                        <li className="hover:scale-110"><FaFacebookSquare className="text-2xl cursor-pointer hover:text-blue-600" />
-                                        </li></a>
-                                    <a href='https://www.instagram.com/_subhadip_de_09' target='_blank'>
-                                        <li className="hover:scale-110"><FaSquareInstagram className="text-2xl cursor-pointer hover:text-pink-500" /></li>
-                                    </a>
-                                    <a href='https://x.com/Subhadip_de1854' target='_blank'>
-                                        <li className="hover:scale-110"><FaSquareXTwitter className="text-2xl cursor-pointer hover:text-black-500" /></li>
-                                    </a>
-                                    <a href='https://www.linkedin.com/in/subhadip-de-80492a323' target='_blank'>
-                                        <li className="hover:scale-110"><FaLinkedin className="text-2xl cursor-pointer hover:text-blue-700" /></li>
-                                    </a>
-                                </ul> */}
+                               
                                 <ul className="flex space-x-3">
                                     <li className="hover:scale-110">
                                         <TbBrandJavascript className="text-2xl cursor-pointer" />
