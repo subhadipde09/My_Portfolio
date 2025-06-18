@@ -1,12 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A portfolio is a professional collection of a person’s work, skills, accomplishments, and experiences that showcases their abilities in a clear and organized way. It serves as a personal brand representation, especially important in creative, technical, or professional fields such as design, development, engineering, writing, art, and more. A well-made portfolio allows potential employers, clients, or collaborators to see real examples of what someone can do—going beyond just a resume or academic qualifications. It typically includes an introduction or bio, a list of technical and soft skills, detailed descriptions of projects or work samples, certifications, achievements, and contact information. In today’s competitive job market, having a strong, well-structured portfolio is essential not only to demonstrate expertise but also to stand out and make a memorable impression.

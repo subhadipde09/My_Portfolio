@@ -24,7 +24,7 @@ function Footer() {
                             <a href='https://x.com/Subhadip_de1854' target='_blank'>
                                 <li className="hover:scale-105"><FaSquareXTwitter className="text-2xl cursor-pointer hover:text-black hover:bg-white" /></li>
                             </a>
-                            <a href='https://www.linkedin.com/in/subhadip-de-80492a323' target='_blank'>
+                            <a href='https://www.linkedin.com/in/subhadip-de-22l65' target='_blank'>
                                 <li className="hover:scale-105"><FaLinkedin className="text-2xl cursor-pointer hover:text-blue-700 hover:bg-white" /></li>
                             </a>
                         </ul>
