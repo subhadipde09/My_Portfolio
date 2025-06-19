@@ -11,6 +11,15 @@ function Projects() {
         "A web-based application that fetches real-time weather data using the OpenWeatherMap API. Users can search for any city and get details like temperature, humidity, and weather conditions.",
       link: "https://github.com/subhadipde09", // Put your GitHub or live link here
     },
+     {
+      id: 2,
+      image: "/Attendance.jpg",
+      title: "Automatic Attendance System (FYP)",
+      tech: "JavaScript | App Script | Cpp | ESP32 | WiFi",
+      description:
+        "Developed a real-time automatic attendance system using the ESP32 microcontroller to capture data over WiFi and automatically log it to Google Sheets using App Script. A web dashboard was created using JavaScript for real-time monitoring and management. Enabled wireless, contactless attendance logging for classrooms and offices.",
+      link: "https://drive.google.com/file/d/1eZiPvNroqRcE6hirQ2NfzbWrFTzRBUMx/view?usp=sharing", // Put your GitHub or live link here
+    },
     // Add more projects here
   ];
 
