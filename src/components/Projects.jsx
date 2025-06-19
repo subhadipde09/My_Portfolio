@@ -8,7 +8,7 @@ function Projects() {
       title: "Weather App",
       tech: "Java | JSP | Servlet | OpenWeatherMap API",
       description:
-        "A web-based application that fetches real-time weather data using the OpenWeatherMap API. Users can search for any city and get details like temperature, humidity, and weather conditions.",
+        "A web-based weather forecasting application developed using Java, JSP, and Servlet that integrates the OpenWeatherMap API to provide real-time weather updates. Users can search for any city and instantly view key data such as temperature, humidity, and weather conditions. This project highlights API integration, dynamic data handling, and full-stack web development skills.",
       link: "https://github.com/subhadipde09", // Put your GitHub or live link here
     },
      {
