@@ -41,7 +41,7 @@ function Home() {
             setMessage(
                 <>
                     ⚠️ You are viewing this site inside <strong>{appName}</strong>.<br />
-                    👉 For the best experience, please open it in <strong>Chrome</strong>.<br />
+                    👉 For the best experience, open in <strong>Chrome</strong>.<br />
                     🔗{" "}
                     <a
                         onClick={handleCopyLink}
@@ -65,7 +65,7 @@ function Home() {
                         <div className="bg-yellow-100 text-yellow-800 p-3 rounded-md mb-4 text-sm font-semibold text-center relative animate-slide-down transition-all duration-500 ease-in-out">
                             <button
                                 onClick={() => setShowBanner(false)}
-                                className="absolute top-1 right-2 text-lg font-bold text-red-600 hover:text-red-800"
+                                className="absolute top-1 right-2 text-lg font-bold text-black"
                                 aria-label="Close"
                             >
                                 ×
