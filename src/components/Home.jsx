@@ -47,7 +47,7 @@ function Home() {
                         onClick={handleCopyLink}
                         className="underline text-blue-600 font-semibold cursor-pointer"
                     >
-                       Link – Click to Copy
+                       Link – Click to copy
                     </a>.
 
                 </>
