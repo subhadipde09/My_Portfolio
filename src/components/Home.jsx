@@ -41,7 +41,7 @@ function Home() {
             setMessage(
                 <>
                     ⚠️ You are viewing this site inside <strong>{appName}</strong>.<br />
-                    👉 For the best experience, open in <strong>Chrome</strong>.<br />
+                    👉 For the best experience, please open in <strong>Chrome</strong>.
                     🔗{" "}
                     <a
                         onClick={handleCopyLink}
