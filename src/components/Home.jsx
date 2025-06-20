@@ -4,13 +4,108 @@ import { BiLogoSpringBoot } from "react-icons/bi";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa6";
 import { SiSpringboot } from "react-icons/si";
+import { useEffect, useState } from "react";
 
 
 
 function Home() {
+    const [message, setMessage] = useState(null);
+    const [showBanner, setShowBanner] = useState(false);
+
+    useEffect(() => {
+        const userAgent = navigator.userAgent || navigator.vendor;
+
+        if (/FBAN|FBAV/.test(userAgent)) {
+            setMessage(
+                <>
+                    ⚠️ You are viewing this site inside <strong>Facebook</strong>.<br />
+                    👉{" "}
+                    <a
+                        href="http://subhadipde01.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-blue-600 font-semibold"
+                    >
+                        Open in Chrome – click here
+                    </a>{" "}
+                    for the best experience.
+                </>
+            );
+            setShowBanner(true);
+        } else if (/Instagram/.test(userAgent)) {
+            setMessage(
+                <>
+                    ⚠️ You are viewing this site inside <strong>Instagram</strong>.<br />
+                    👉{" "}
+                    <a
+                        href="http://subhadipde01.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-blue-600 font-semibold"
+                    >
+                        Open in Chrome – click here
+                    </a>{" "}
+                    for the best experience.
+                </>
+            );
+            setShowBanner(true);
+        } else if (/LinkedInApp/.test(userAgent)) {
+            setMessage(
+                <>
+                    ⚠️ You are viewing this site inside <strong>LinkedIn</strong>.<br />
+                    👉{" "}
+                    <a
+                        href="http://subhadipde01.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-blue-600 font-semibold"
+                    >
+                        Open in Chrome – click here
+                    </a>{" "}
+                    for the best experience.
+                </>
+            );
+            setShowBanner(true);
+        } else if (/WhatsApp/.test(userAgent) || /Messenger/.test(userAgent)) {
+            setMessage(
+                <>
+                    ⚠️ You are viewing this site inside <strong>{/WhatsApp/.test(userAgent) ? 'WhatsApp' : 'Messenger'}</strong>.<br />
+                    👉{" "}
+                    <a
+                        href="http://subhadipde01.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-blue-600 font-semibold"
+                    >
+                        Open in Chrome – click here
+                    </a>{" "}
+                    for the best experience.
+                </>
+            );
+            setShowBanner(true);
+        }else {
+      // Other browsers (not in-app)
+      setMessage("✅ You are viewing this site in a browser. All features should work properly.");
+    }
+    }, []);
     return (
         <>
             <div name="Home" className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-14 md:my-20'>
+                 <div className="p-4">
+                                    {/* Animated slide-down banner */}
+                                    {showBanner && message && (
+                                        <div className="bg-yellow-100 text-yellow-800 p-3 rounded-md mb-4 text-sm font-semibold text-center relative animate-slide-down transition-all duration-500 ease-in-out">
+                                            <button
+                                                onClick={() => setShowBanner(false)}
+                                                className="absolute top-1 right-2 text-lg font-bold text-red-600 hover:text-red-800"
+                                                aria-label="Close"
+                                            >
+                                                ×
+                                            </button>
+                                            {message}
+                                        </div>
+                                    )}
+                                </div>
                 <div className="flex flex-col md:flex-row">
                     <div className="md:w-1/2 mt-8 md:mt-20 space-y-2 order-2 md:order-1">
                         <span className="text-xl">Welcome to my portfolio!</span><br></br>
@@ -49,7 +144,7 @@ function Home() {
                     md:space-y-0 ">
                             <div className="order-2 md:order-1">
                                 <h1 className="font-bold mb-2 mt-5 ml-3.5 md:ml-0">Upskilling on</h1>
-                               
+
                                 <ul className="flex space-x-3">
                                     <li className="hover:scale-110">
                                         <TbBrandJavascript className="text-2xl cursor-pointer" />
@@ -92,5 +187,6 @@ function Home() {
         </>
     );
 }
+
 
 export default Home;
