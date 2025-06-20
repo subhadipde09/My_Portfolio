@@ -12,100 +12,68 @@ function Home() {
     const [message, setMessage] = useState(null);
     const [showBanner, setShowBanner] = useState(false);
 
+    // ✅ Define this first so it's available in useEffect
+    const handleCopyLink = () => {
+        const link = "https://subhadipde01.netlify.app";
+        navigator.clipboard.writeText(link).then(() => {
+            alert("✅ Link copied! Open Chrome and paste it.");
+        });
+    };
+
     useEffect(() => {
         const userAgent = navigator.userAgent || navigator.vendor;
 
+        let appName = "";
+
         if (/FBAN|FBAV/.test(userAgent)) {
-            setMessage(
-                <>
-                    ⚠️ You are viewing this site inside <strong>Facebook</strong>.<br />
-                    👉{" "}
-                    <a
-                        href="http://subhadipde01.netlify.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline text-blue-600 font-semibold"
-                    >
-                        Open in Chrome – click here
-                    </a>{" "}
-                    for the best experience.
-                </>
-            );
-            setShowBanner(true);
+            appName = "Facebook";
         } else if (/Instagram/.test(userAgent)) {
-            setMessage(
-                <>
-                    ⚠️ You are viewing this site inside <strong>Instagram</strong>.<br />
-                    👉{" "}
-                    <a
-                        href="http://subhadipde01.netlify.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline text-blue-600 font-semibold"
-                    >
-                        Open in Chrome – click here
-                    </a>{" "}
-                    for the best experience.
-                </>
-            );
-            setShowBanner(true);
+            appName = "Instagram";
         } else if (/LinkedInApp/.test(userAgent)) {
+            appName = "LinkedIn";
+        } else if (/WhatsApp/.test(userAgent)) {
+            appName = "WhatsApp";
+        } else if (/Messenger/.test(userAgent)) {
+            appName = "Messenger";
+        }
+
+        if (appName) {
             setMessage(
                 <>
-                    ⚠️ You are viewing this site inside <strong>LinkedIn</strong>.<br />
-                    👉{" "}
+                    ⚠️ You are viewing this site inside <strong>{appName}</strong>.<br />
+                    👉 For the best experience, please open it in <strong>Chrome</strong>.<br />
+                    🔗{" "}
                     <a
-                        href="http://subhadipde01.netlify.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline text-blue-600 font-semibold"
+                        onClick={handleCopyLink}
+                        className="underline text-blue-600 font-semibold cursor-pointer"
                     >
-                        Open in Chrome – click here
-                    </a>{" "}
-                    for the best experience.
+                        Copy the link here
+                    </a>.
+
                 </>
             );
             setShowBanner(true);
-        } else if (/WhatsApp/.test(userAgent) || /Messenger/.test(userAgent)) {
-            setMessage(
-                <>
-                    ⚠️ You are viewing this site inside <strong>{/WhatsApp/.test(userAgent) ? 'WhatsApp' : 'Messenger'}</strong>.<br />
-                    👉{" "}
-                    <a
-                        href="http://subhadipde01.netlify.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline text-blue-600 font-semibold"
-                    >
-                        Open in Chrome – click here
-                    </a>{" "}
-                    for the best experience.
-                </>
-            );
-            setShowBanner(true);
-        }else {
-      // Other browsers (not in-app)
-      setMessage("✅ You are viewing this site in a browser. All features should work properly.");
-    }
+        }
     }, []);
+
     return (
         <>
             <div name="Home" className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-14 md:my-20'>
-                 <div className="p-4">
-                                    {/* Animated slide-down banner */}
-                                    {showBanner && message && (
-                                        <div className="bg-yellow-100 text-yellow-800 p-3 rounded-md mb-4 text-sm font-semibold text-center relative animate-slide-down transition-all duration-500 ease-in-out">
-                                            <button
-                                                onClick={() => setShowBanner(false)}
-                                                className="absolute top-1 right-2 text-lg font-bold text-red-600 hover:text-red-800"
-                                                aria-label="Close"
-                                            >
-                                                ×
-                                            </button>
-                                            {message}
-                                        </div>
-                                    )}
-                                </div>
+                <div className="p-4">
+                    {/* ⚠️ Slide-down warning banner */}
+                    {showBanner && message && (
+                        <div className="bg-yellow-100 text-yellow-800 p-3 rounded-md mb-4 text-sm font-semibold text-center relative animate-slide-down transition-all duration-500 ease-in-out">
+                            <button
+                                onClick={() => setShowBanner(false)}
+                                className="absolute top-1 right-2 text-lg font-bold text-red-600 hover:text-red-800"
+                                aria-label="Close"
+                            >
+                                ×
+                            </button>
+                            {message}
+                        </div>
+                    )}
+                </div>
                 <div className="flex flex-col md:flex-row">
                     <div className="md:w-1/2 mt-8 md:mt-20 space-y-2 order-2 md:order-1">
                         <span className="text-xl">Welcome to my portfolio!</span><br></br>
