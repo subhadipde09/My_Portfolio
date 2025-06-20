@@ -45,7 +45,7 @@ function Home() {
                     🔗{" "}
                     <a
                         onClick={handleCopyLink}
-                        className="underline text-blue-700 font-semibold cursor-pointer"
+                        className="underline text-blue-500 font-semibold cursor-pointer"
                     >
                        Link – Click to Copy
                     </a>.
