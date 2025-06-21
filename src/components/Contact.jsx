@@ -62,7 +62,7 @@ function Contact() {
                     <div className='flex '>
                         <FaLocationDot className='text-x md:text-xl text-purple-700 mt-0.5 md:mt-0' /><p className="text-sm md:text-x flex ml-3  font-semibold ">Official Address</p>
                     </div>
-                    <span className='text-xs md:text-sm ml-7 md:ml-8 flex text-justify text-gray-500 tracking-tight leading-none'>NH-60, Narayangarh, Paschim Medinipur, West Bengal – 721437, India</span>
+                    <span className='text-xs md:text-sm ml-7 md:ml-8 flex text-justify text-gray-500 tracking-tight leading-none mt-2'>NH-60, Narayangarh, Paschim Medinipur, West Bengal – 721437, India</span>
                 </div>
                 <div className='mt-10'>
                     <p className='text-sm md:text-base text-gray-500'>I'm always open to discussing product</p>
