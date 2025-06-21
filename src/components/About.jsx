@@ -20,7 +20,7 @@ function About() {
         <h1 className="text-green-500 font-bold text-xl mt-5">Certification</h1>
         <span className="text-justify">Java Fullstack Developer Training</span>
         <br></br>
-        <span classNamr='text-justify'>QSpiders | JSpiders, Kolkata – West Bengal, India</span>
+        <span classNamr='text-justify'>QSpiders | JSpiders, Kolkata – West Bengal</span>
         <br></br>
         <span>Jun 2025 - Present</span>
         <br></br>
