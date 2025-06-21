@@ -13,7 +13,7 @@ function Projects() {
     },
      {
       id: 2,
-      image: "/Attendance.jpg",
+      image: "/Attendance.png",
       title: "Automatic Attendance System (FYP)",
       tech: "JavaScript | App Script | Cpp | ESP32 | WiFi",
       description:
