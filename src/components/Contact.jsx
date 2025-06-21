@@ -52,7 +52,7 @@ function Contact() {
                     </div>
                     <span className='text-xs md:text-sm ml-7 md:ml-8 text-justify text-gray-500 tracking-tight'>+91 8637547409</span>
                 </div>
-                <div className='mt-3'>
+                <div className='mt-2'>
                     <div className='flex '>
                         <TbMailFilled className='text-x md:text-xl text-purple-700' /><p className="text-sm md:text-x font-semibold flex ml-3 ">Email Address</p>
                     </div>
