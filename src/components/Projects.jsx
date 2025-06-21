@@ -15,9 +15,9 @@ function Projects() {
       id: 2,
       image: "/Attendance.png",
       title: "Automatic Attendance System (FYP)",
-      tech: "JavaScript | App Script | Cpp | ESP32 | WiFi",
+      tech: "JavaScript | Apps Script | Cpp | ESP32 | WiFi",
       description:
-        "Developed a real-time automatic attendance system using the ESP32 microcontroller to capture data over WiFi and automatically log it to Google Sheets using App Script. A web dashboard was created using JavaScript for real-time monitoring and management. Enabled wireless, contactless attendance logging for classrooms and offices.",
+        "Developed a real-time automatic attendance system using the ESP32 microcontroller to capture data over WiFi and automatically log it to Google Sheets using Apps Script. A web dashboard was created using JavaScript for real-time monitoring and management. Enabled wireless, contactless attendance logging for classrooms and offices.",
       link: "https://drive.google.com/file/d/1eZiPvNroqRcE6hirQ2NfzbWrFTzRBUMx/view?usp=sharing", // Put your GitHub or live link here
     },
     // Add more projects here
