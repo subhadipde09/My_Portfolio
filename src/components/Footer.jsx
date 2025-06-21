@@ -33,9 +33,10 @@ function Footer() {
                     <div className=' flex flex-col items-center mt-4'>
                         <div className='border-t border-white-700 text-center'>
                             <p className='mt-4 text-white text-sm justify-center'>
-                                &copy;2025 Your company. All rights reserved.
-                                <br></br>
-                                Made by &hearts; Subhadip De
+                                Crafted with code by Software Engineer — Subhadip De
+                                 <br></br>
+                                &copy;2025, All rights reserved.
+                               
                             </p>
                         </div>
 
