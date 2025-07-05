@@ -12,7 +12,7 @@ function Home() {
     const [message, setMessage] = useState(null);
     const [showBanner, setShowBanner] = useState(false);
 
-    // ✅ Define this first so it's available in useEffect
+    // Define this first so it's available in useEffect
     const handleCopyLink = () => {
         const link = "https://subhadipde01.netlify.app";
         navigator.clipboard.writeText(link).then(() => {

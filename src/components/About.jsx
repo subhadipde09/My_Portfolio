@@ -15,7 +15,7 @@ function About() {
         <br></br>
         <span className="text-justify">College of Engineering and Management, Kolaghat – West Bengal, India</span>
         <br></br>
-        <span>CGPA: 7.58 | 2022 – 2025</span>
+        <span>CGPA: 7.66 | 2022 – 2025</span>
         <br></br>
         <h1 className="text-green-500 font-bold text-xl mt-5">Certification</h1>
         <span className="text-justify">Java Fullstack Developer Training</span>
