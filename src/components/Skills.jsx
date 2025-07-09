@@ -13,34 +13,40 @@ function Skills() {
       name: "CSS",
     },
     {
-      id: 3,
-      logo: "/java.png",
-      name: "Java",
-    },
-    {
       id: 4,
       logo: "/javascript.png",
       name: "JavaScript",
     },
     {
       id: 5,
-      logo: "/oracle.png",
-      name: "Oracle",
-    },
-    {
-      id: 6,
-      logo: "/spring.png",
-      name: "Spring",
-    },
-    {
-      id: 7,
-      logo: "/springBoot.jpg",
-      name: "Spring Boot",
-    }, {
-      id: 8,
       logo: "/reactjs.png",
       name: "React",
     },
+    {
+      id: 6,
+      logo: "/python-logo.png",
+      name: "Python",
+    },
+     {
+      id: 7,
+      logo: "/django.png",
+      name: "Django",
+    },
+     {
+      id: 3,
+      logo: "/java.png",
+      name: "Java",
+    },
+    {
+      id: 8,
+      logo: "/springBoot.jpg",
+      name: "Spring Boot",
+    },
+    {
+      id: 9,
+      logo: "/oracle.png",
+      name: "Oracle",
+    }, 
   ];
 
   return (

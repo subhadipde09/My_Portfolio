@@ -5,7 +5,7 @@ function About() {
     <>
       <div name="About" className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-8 md:my-16'>
         <h1 className="text-xl md:text-2xl font-bold mb-5">About</h1>
-        <p className="text-justify ">Hello, I'm Shubhdip De — an enthusiastic software developer with a passion for Java full stack.
+        <p className="text-justify ">Hello, I'm Shubhdip De — an enthusiastic software developer with a passion for Python full stack.
           I strive to create impactful and visually appealing software solutions that leave a lasting impression.</p>
         <br></br>
         <h1 className="text-green-500 font-bold text-xl">Education</h1>
@@ -18,14 +18,14 @@ function About() {
         <span>CGPA: 7.66 | 2022 – 2025</span>
         <br></br>
         <h1 className="text-green-500 font-bold text-xl mt-5">Certification</h1>
-        <span className="text-justify">Java Fullstack Developer Training</span>
+        <span className="text-justify">Python Fullstack Developer Training</span>
         <br></br>
-        <span classNamr='text-justify'>QSpiders | JSpiders, Kolkata – West Bengal</span>
+        <span classNamr='text-justify'>QSpiders | JSpiders | PySpiders, Kolkata – West Bengal, India</span>
         <br></br>
         <span>Jun 2025 - Present</span>
         <br></br>
         <h1 className="text-green-500 font-bold text-xl mt-5 text-justify">Mission Statement</h1>
-        <p className="text-justify ">My mission is to leverage my skills and creativity to deliver innovative Java Full Stack solutions that exceed client
+        <p className="text-justify ">My mission is to leverage my skills and creativity to deliver innovative Python Full Stack solutions that exceed client
           expectations and contribute meaningfully to the digital landscape.
           I am committed to continuous learning and growth,
           always seeking new challenges and opportunities to expand my horizons as a developer.

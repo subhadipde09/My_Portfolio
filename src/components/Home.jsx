@@ -5,6 +5,8 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa6";
 import { SiSpringboot } from "react-icons/si";
 import { useEffect, useState } from "react";
+import { DiDjango } from "react-icons/di";
+import { TbBrandDjango } from "react-icons/tb";
 
 
 
@@ -120,8 +122,8 @@ function Home() {
                                     <li className="hover:scale-110">
                                         <FaReact className="text-2xl cursor-pointer" />
                                     </li>
-                                    <li className="hover:scale-110">
-                                        <BiLogoSpringBoot className="text-2xl cursor-pointer" />
+                                    <li className=" hover:scale-110">
+                                        <TbBrandDjango className=" text-2xl cursor-pointer" />
                                     </li>
                                     <li className="hover:scale-110">
                                         <SiSpringboot className="text-2xl cursor-pointer" />
