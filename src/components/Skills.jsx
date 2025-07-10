@@ -22,7 +22,7 @@ function Skills() {
       logo: "/reactjs.png",
       name: "React",
     },
-    {
+    /*{
       id: 6,
       logo: "/python-logo.png",
       name: "Python",
@@ -31,7 +31,7 @@ function Skills() {
       id: 7,
       logo: "/django.png",
       name: "Django",
-    },
+    },*/
      {
       id: 3,
       logo: "/java.png",

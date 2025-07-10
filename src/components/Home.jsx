@@ -7,6 +7,7 @@ import { SiSpringboot } from "react-icons/si";
 import { useEffect, useState } from "react";
 import { DiDjango } from "react-icons/di";
 import { TbBrandDjango } from "react-icons/tb";
+import { FaSalesforce } from "react-icons/fa";
 
 
 
@@ -122,12 +123,13 @@ function Home() {
                                     <li className="hover:scale-110">
                                         <FaReact className="text-2xl cursor-pointer" />
                                     </li>
-                                    <li className=" hover:scale-110">
-                                        <TbBrandDjango className=" text-2xl cursor-pointer" />
-                                    </li>
                                     <li className="hover:scale-110">
                                         <SiSpringboot className="text-2xl cursor-pointer" />
                                     </li>
+                                    <li className=" hover:scale-110">
+                                        <FaSalesforce className=" text-2xl cursor-pointer" />
+                                    </li>
+                                    
 
                                 </ul>
 
